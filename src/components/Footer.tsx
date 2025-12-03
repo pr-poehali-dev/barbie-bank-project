@@ -67,6 +67,17 @@ const Footer = () => {
                   Инвестиции
                 </Link>
               </li>
+              <li>
+                <a 
+                  href="https://github.com/settings/installations" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-secondary transition-colors flex items-center gap-2"
+                >
+                  <Icon name="Download" size={14} />
+                  Скачать код
+                </a>
+              </li>
             </ul>
           </div>
 
