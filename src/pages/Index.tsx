@@ -86,11 +86,12 @@ const Index = () => {
                   <Icon name="ArrowRight" size={20} className="ml-2" />
                 </Button>
               </Link>
-              <Link to="/about">
-                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-secondary text-lg px-8">
-                  Узнать больше
+              <a href="https://github.com/settings/installations" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-secondary text-lg px-8 gap-2">
+                  <Icon name="Download" size={20} />
+                  Скачать код
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
 

@@ -47,6 +47,17 @@ const Navigation = () => {
                 {link.label}
               </Link>
             ))}
+            <a
+              href="https://github.com/settings/installations"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2"
+            >
+              <Button variant="outline" className="border-primary text-primary hover:bg-secondary gap-2">
+                <Icon name="Download" size={18} />
+                Скачать код
+              </Button>
+            </a>
           </div>
 
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -78,6 +89,16 @@ const Navigation = () => {
                     <span>{link.label}</span>
                   </Link>
                 ))}
+                <a
+                  href="https://github.com/settings/installations"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsOpen(false)}
+                  className="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-all bg-primary text-white hover:bg-primary/90"
+                >
+                  <Icon name="Download" size={20} />
+                  <span>Скачать код</span>
+                </a>
               </div>
             </SheetContent>
           </Sheet>
